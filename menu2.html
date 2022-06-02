@@ -1,0 +1,1819 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  
+
+
+  
+    <title>Menu</title>
+  </head>
+  <body class="bg-light">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+     <div class="container">   
+    <a class="navbar-brand" href="#">Irsyad Cafetaria</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link js-scroll-trigger" href="menu2.html"><i class="fas fa-utensils mr-2"></i>DAFTAR MENU <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="pesanan2.html"><i class="fas fa-shopping-cart mr-2"></i>DAFTAR PESANAN</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+   <div class="food-menu">
+    <div class="container">
+      <h2>Food</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Goreng Ayam</h5>
+              <p class="card-text">Jumlah pesanan.</p>
+
+               <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="min1()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="quantity1" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="max1()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="harga1" class="btn btn-warning" readonly></input>
+                <button onclick="pesan1()" href="#" class="btn btn-success">Pesan</button>
+              
+
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Ayam Penyet</h5>
+              <p class="card-text">Jumlah pesanan.</p>
+
+                <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="min2()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="quantity2" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="max2()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="harga2" class="btn btn-warning" readonly></input>
+                <button onclick="pesan2()" href="#" class="btn btn-success">Pesan</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Soto</h5>
+              <p class="card-text">Jumlah pesanan..</p>
+
+               <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="min3()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="quantity3" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="max3()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="harga3" class="btn btn-warning" readonly></input>
+                <button onclick="pesan3()" href="#" class="btn btn-success">Pesan</button>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Campur</h5>
+              <p class="card-text">Jumlah pesanan.</p>
+
+              <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="min4()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="quantity4" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="max4()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="harga4" class="btn btn-warning" readonly></input>
+                <button onclick="pesan4()" href="#" class="btn btn-success">Pesan</button>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Nasi Telur</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min5()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity5" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max5()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga5" class="btn btn-warning" readonly></input>
+               <button onclick="pesan5()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Nasi Goreng</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min6()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity6" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max6()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga6" class="btn btn-warning" readonly></input>
+               <button onclick="pesan6()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Mie Kuah Mie</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min7()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity7" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max7()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga7" class="btn btn-warning" readonly></input>
+               <button onclick="pesan7()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Mie Sam-Sam</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min8()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity8" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max8()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga8" class="btn btn-warning" readonly></input>
+               <button onclick="pesan8()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Mie Goreng</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min9()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity9" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max9()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga9" class="btn btn-warning" readonly></input>
+               <button onclick="pesan9()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Ifumie Goreng</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min10()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity10" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max10()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga10" class="btn btn-warning" readonly></input>
+               <button onclick="pesan10()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Mie Tiaw</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min11()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity11" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max11()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga11" class="btn btn-warning" readonly></input>
+               <button onclick="pesan11()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Mie Bengkel</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min12()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantity12" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max12()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga12" class="btn btn-warning" readonly></input>
+               <button onclick="pesan12()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/nasi-goreng2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Bakso</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="min13()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="quantit13" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="max13()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="harga13" class="btn btn-warning" readonly></input>
+               <button onclick="pesan13()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+     </div>
+    </div>
+   </div> 
+
+
+   <div class="drink-menu">
+     <div class="container">
+      <h2>Drink</h2>
+      <hr>
+       <div class="row">
+
+         <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Kopi Panas/Dingin</h5>
+              <p class="card-text">Jumlah pesanan.</p>
+              <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="drink_min1()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="minum1" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="drink_max1()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="drink1" class="btn btn-warning" readonly></input>
+                <button onclick="pesan_drink1()" href="#" class="btn btn-success">Pesan</button>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Kopi Susu Panas/Dingin</h5>
+              <p class="card-text">Jumlah pesanan.</p>
+              <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="drink_min2()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="minum2" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="drink_max2()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="drink2" class="btn btn-warning" readonly></input>
+                <button onclick="pesan_drink2()" href="#" class="btn btn-success">Pesan</button>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Kopi Gula Merah</h5>
+              <p class="card-text">Jumlah pesanan.</p>
+              <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="drink_min3()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="minum3" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="drink_max3()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="drink3" class="btn btn-warning" readonly></input>
+                <button onclick="pesan_drink3()" href="#" class="btn btn-success">Pesan</button>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+           <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Kopi Jahe Gula Merah</h5>
+              <p class="card-text">Jumlah pesanan.</p>
+              <span class="input-group-btn">
+                <form class="form-snipper">
+                  <button onclick="drink_min4()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                  <span class="fas fa-minus"></span>
+                  </button>
+                  </span>
+                  <input type="text" id="minum4" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                  <span class="input-group-btn">
+                  <button onclick="drink_max4()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                  <span class="fas fa-plus"></span>
+                  </button>
+                </form> 
+              </span>
+              
+                <input style="width: 50%;" type="text" id="drink4" class="btn btn-warning" readonly></input>
+                <button onclick="pesan_drink4()" href="#" class="btn btn-success">Pesan</button>
+            </div>
+          </div>
+         </div>
+
+         <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Teh Manis Panas</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min5()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum5" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max5()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink5" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink5()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Teh Manis Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min6()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum6" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max6()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink6" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink6()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Teh Susu Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min7()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum7" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max7()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink7" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink7()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Wedang Jahe</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min8()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum8" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max8()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink8" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink8()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Teh Jahe</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min9()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum9" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max9()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink9" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink9()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Teh Tarik Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min10()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum10" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max10()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink10" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink10()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Teh Tarik Susu Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min11()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum11" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max11()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink11" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink11()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Capucino Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min12()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum12" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max12()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink12" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink12()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Capucino Susu Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min13()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum13" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max13()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink13" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink13()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Milo Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min14()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum14" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max14()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink14" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink14()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Milo Susu Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min15()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum15" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max15()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink15" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink15()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">White Copi Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min16()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum16" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max16()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink16" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink16()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">White Copi Susu Panas/Dingin</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min17()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum17" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max17()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink17" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink17()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Cincau</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min18()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum18" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max18()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink18" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink18()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Sirup Dinign</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min19()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum19" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max19()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink19" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink19()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Nutri Sari</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min20()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum20" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max20()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink20" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink20()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+        <div class="col-md-3 p-5">
+          <div class="card" style="width: 18rem;">
+           <img class="card-img-top" src="img/jus-alpukat2.jpg" alt="Card image cap">
+           <div class="card-body">
+             <h5 class="card-title">Es Kosong</h5>
+             <p class="card-text">Jumlah pesanan.</p>
+             <span class="input-group-btn">
+               <form class="form-snipper">
+                 <button onclick="drink_min21()" type="button" class="quantity-left-minus btn btn-secondary btn-number" data-type="minus" data-field="">
+                 <span class="fas fa-minus"></span>
+                 </button>
+                 </span>
+                 <input type="text" id="minum21" name="quantity" class="form-inc input-number" value="0" min="1" max="100"readonly>
+                 <span class="input-group-btn">
+                 <button onclick="drink_max21()" type="button" class="quantity-right-plus btn btn-secondary btn-number" data-type="plus" data-field="">
+                 <span class="fas fa-plus"></span>
+                 </button>
+               </form> 
+             </span>
+             
+               <input style="width: 50%;" type="text" id="drink21" class="btn btn-warning" readonly></input>
+               <button onclick="pesan_drink21()" href="#" class="btn btn-success">Pesan</button>
+           </div>
+         </div>
+        </div>
+
+       </div>
+     </div>
+   </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+
+
+   
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    
+    <script>
+
+        var config = {
+          apiKey: "AIzaSyDOsOmc7-QzmPk1ivu43MU5-qYzTNiV5zM",
+          authDomain: "irsyad-cafe.firebaseapp.com",
+          databaseURL: "https://irsyad-cafe-default-rtdb.firebaseio.com/",
+          projectId: "irsyad-cafe",
+          storageBucket: "irsyad-cafe.appspot.com",
+          messagingSenderId: "578246487910",
+          appId: "1:578246487910:web:f19ea1e90767e1d1fae2a7",
+          measurementId: "G-ZRMBTQ0L8L"
+            };
+            firebase.initializeApp(config);
+
+            var messagesRef = firebase.database();
+            var ref=messagesRef.ref("Meja_2_Info").child("Pesan");
+            ref.on("value",function(snapshot){
+                snapshot.forEach(function (childSnapshot){
+                    data=childSnapshot.val();
+                    console.log(data);
+                    nilai_meja_2=data;
+                    alert(nilai_meja_2);
+              
+                });     
+            })    
+
+  $(document).ready(function(){
+
+    firebase.database().ref("Meja_2_Info").child("status").set({
+            nilai: "Penuh",
+        });
+    $("#harga1").val("Rp - ");
+    $("#harga2").val("Rp - ");
+    $("#harga3").val("Rp - ");
+    $("#harga4").val("Rp - ");
+    $("#harga5").val("Rp - ");
+    $("#harga6").val("Rp - ");
+    $("#harga7").val("Rp - ");
+    $("#harga8").val("Rp - ");
+    $("#harga9").val("Rp - ");
+    $("#harga10").val("Rp - ");
+    $("#harga11").val("Rp - ");
+    $("#harga12").val("Rp - ");
+    $("#harga13").val("Rp - ");
+
+    $("#drink1").val("Rp - ");
+    $("#drink2").val("Rp - ");
+    $("#drink3").val("Rp - ");
+    $("#drink4").val("Rp - ");
+    $("#drink5").val("Rp - ");
+    $("#drink6").val("Rp - ");
+    $("#drink7").val("Rp - ");
+    $("#drink8").val("Rp - ");
+    $("#drink9").val("Rp - ");
+    $("#drink10").val("Rp - ");
+    $("#drink11").val("Rp - ");
+    $("#drink12").val("Rp - ");
+    $("#drink13").val("Rp - ");
+    $("#drink14").val("Rp - ");
+    $("#drink15").val("Rp - ");
+    $("#drink16").val("Rp - ");
+    $("#drink17").val("Rp - ");
+    $("#drink18").val("Rp - ");
+    $("#drink19").val("Rp - ");
+    $("#drink20").val("Rp - ");
+    $("#drink21").val("Rp - ");
+
+
+  });
+ 
+
+  let minuman=[];
+  let makanan=[];
+
+  for (let i = 1; i <= 21; i++) {
+     minuman[i]=0;
+  }
+  for (let i = 1; i <= 13; i++) {
+    makanan[i]=0;
+  }
+ 
+  function max1(){
+    makanan[1]++;
+    $("#quantity1").val(makanan[1]);
+    harga1=makanan[1]*18000;
+    $("#harga1").val("Rp "+harga1);
+
+  }
+  function min1(){
+    makanan[1]--;
+    $("#quantity1").val(makanan[1]);
+    harga1=makanan[1]*18000;
+    $("#harga1").val("Rp "+harga1);
+  }
+  function pesan1(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan1").set({
+      harga: harga1,
+      jumlah:  makanan[1],
+      nama: "Nasi Goreng Ayam",
+    });
+    alert("Pesanan dibuat")
+    
+  }
+
+  
+
+  function max2(){
+    makanan[2]++;
+    $("#quantity2").val(makanan[2]);
+    harga2=makanan[2]*15000;
+    $("#harga2").val("Rp "+harga2);
+  }
+  function min2(){
+    makanan[2]--;
+    $("#quantity2").val(makanan[2]);
+    harga2=makanan[2]*15000;
+    $("#harga2").val("Rp "+harga2);
+  }
+  function pesan2(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan2").set({
+      harga: harga2,
+      jumlah:  makanan[2],
+      nama: "Nasi Ayam Penyet",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max3(){
+    makanan[3]++;
+    $("#quantity3").val(makanan[3]);
+    harga3=makanan[3]*13000;
+    $("#harga3").val("Rp "+harga3);
+  }
+  function min3(){
+    makanan[3]--;
+    $("#quantity3").val(makanan[3]);
+    harga3=makanan[3]*13000;
+    $("#harga3").val("Rp "+harga3);
+  }
+  function pesan3(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan3").set({
+      harga: harga3,
+      jumlah:  makanan[3],
+      nama: "Nasi Soto",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max4(){
+    makanan[4]++;
+    $("#quantity4").val(makanan[4]);
+    harga4=makanan[4]*12000;
+    $("#harga4").val("Rp "+makanan[4]);
+  }
+  function min4(){
+    makanan[4]--;
+    $("#quantity4").val(makanan[4]);
+    harga4=makanan[4]*12000;
+    $("#harga4").val("Rp "+harga4);
+  }
+  function pesan4(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan4").set({
+      harga: harga4,
+      jumlah:  makanan[4],
+      nama: "Nasi Campur",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max5(){
+    makanan[5]++;
+    $("#quantity5").val(makanan[5]);
+    harga5=makanan[5]*10000;
+    $("#harga5").val("Rp "+harga5);
+  }
+  function min5(){
+    makanan[5]--;
+    $("#quantity5").val(makanan[5]);
+    harga5=makanan[5]*10000;
+    $("#harga5").val("Rp "+harga5);
+  }
+  function pesan5(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan5").set({
+      harga: harga5,
+      jumlah:  makanan[5],
+      nama: "Nasi Telur",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max6(){
+    makanan[6]++;
+    $("#quantity6").val(makanan[6]);
+    harga6=makanan[6]*10000;
+    $("#harga6").val("Rp "+harga6);
+  }
+  function min6(){
+    makanan[6]--;
+    $("#quantity6").val(makanan[6]);
+    harga6=makanan[6]*10000;
+    $("#harga6").val("Rp "+harga6);
+  }
+  function pesan6(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan6").set({
+      harga: harga6,
+      jumlah:  makanan[6],
+      nama: "Nasi Goreng",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max7(){
+    makanan[7]++;
+    $("#quantity7").val(makanan[7]);
+    harga7=makanan[7]*10000;
+    $("#harga7").val("Rp "+harga7);
+  }
+  function min7(){
+    makanan[7]--;
+    $("#quantity7").val(makanan[7]);
+    harga7=makanan[7]*10000;
+    $("#harga7").val("Rp "+harga7);
+  }
+  function pesan7(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan7").set({
+      harga: harga7,
+      jumlah:  makanan[7],
+      nama: "Mie Kuah Mie",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max8(){
+    makanan[8]++;
+    $("#quantity8").val(makanan[8]);
+    harga8=makanan[8]*10000;
+    $("#harga8").val("Rp "+harga8);
+  }
+  function min8(){
+    makanan[8]--;
+    $("#quantity8").val(makanan[8]);
+    harga8=makanan[8]*10000;
+    $("#harga8").val("Rp "+harga8);
+  }
+  function pesan8(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan8").set({
+      harga: harga8,
+      jumlah:  makanan[8],
+      nama: "Mie Sam-Sam",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max9(){
+    makanan[9]++;
+    $("#quantity9").val(makanan[9]);
+    harga9=makanan[9]*10000;
+    $("#harga9").val("Rp "+harga9);
+  }
+  function min9(){
+    makanan[9]--;
+    $("#quantity9").val(makanan[9]);
+    harga9=makanan[9]*10000;
+    $("#harga9").val("Rp "+harga9);
+  }
+  function pesan9(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan9").set({
+      harga: harga9,
+      jumlah:  makanan[9],
+      nama: "Mie Goreng",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max10(){
+    makanan[10]++;
+    $("#quantity10").val(makanan[10]);
+    harga10=makanan[10]*10000;
+    $("#harga10").val("Rp "+harga10);
+  }
+  function min10(){
+    makanan[10]--;
+    $("#quantity10").val(makanan[10]);
+    harga10=makanan[10]*10000;
+    $("#harga10").val("Rp "+harga10);
+  }
+  function pesan10(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan10").set({
+      harga: harga10,
+      jumlah:  makanan[10],
+      nama: "Ifumie Goreng",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max11(){
+    makanan[11]++;
+    $("#quantity11").val(makanan[11]);
+    harga11=makanan[11]*10000;
+    $("#harga11").val("Rp "+harga11);
+  }
+  function min11(){
+    makanan[11]--;
+    $("#quantity11").val(makanan[11]);
+    harga11=makanan[11]*10000;
+    $("#harga11").val("Rp "+harga11);
+  }
+  function pesan11(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan11").set({
+      harga: harga11,
+      jumlah:  makanan[11],
+      nama: "Mie Tiaw",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max12(){
+    makanan[12]++;
+    $("#quantity12").val(makanan[12]);
+    harga12=makanan[12]*10000;
+    $("#harga12").val("Rp "+harga12);
+  }
+  function min12(){
+    makanan[12]--;
+    $("#quantity12").val(makanan[12]);
+    harga12=makanan[12]*10000;
+    $("#harga12").val("Rp "+harga12);
+  }
+  function pesan12(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan12").set({
+      harga: harga12,
+      jumlah:  makanan[12],
+      nama: "Mie Bengkel",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function max13(){
+    makanan[13]++;
+    $("#quantity13").val(makanan[13]);
+    harga13=makanan[13]*10000;
+    $("#harga13").val("Rp "+harga13);
+  }
+  function min13(){
+    makanan[13]--;
+    $("#quantity13").val(makanan[13]);
+    harga13=makanan[13]*10000;
+    $("#harga13").val("Rp "+harga13);
+  }
+  function pesan13(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Makanan13").set({
+      harga: harga13,
+      jumlah:  makanan[13],
+      nama: "Bakso",
+    });
+    alert("Pesanan dibuat")
+  }
+
+
+
+  function drink_max1(){
+    minuman[1]++;
+    $("#minum1").val(minuman[1]);
+    harga_minum1=minuman[1]*6000;
+    $("#drink1").val("Rp "+harga_minum1);
+  }
+  function drink_min1(){
+    minuman[1]--;
+    $("#minum1").val(minuman[1]);
+    harga_minum1=minuman[1]*6000;
+    $("#drink1").val("Rp "+harga_minum1);
+  }
+  function pesan_drink1(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman1").set({
+      harga: harga_minum1,
+      jumlah:  minuman[1],
+      nama: "Kopi Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max2(){
+    minuman[2]++;
+    $("#minum2").val(minuman[2]);
+    harga_minum2=minuman[2]*7000;
+    $("#drink2").val("Rp "+harga_minum2);
+  }
+  function drink_min2(){
+    minuman[2]--;
+    $("#minum2").val(minuman[2]);
+    harga_minum2=minuman[2]*7000;
+    $("#drink2").val("Rp "+harga_minum2);
+  }
+  function pesan_drink2(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman2").set({
+      harga: harga_minum2,
+      jumlah:  minuman[2],
+      nama: "Kopi Susu Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max3(){
+    minuman[3]++;
+    $("#minum3").val(minuman[3]);
+    harga_minum3=minuman[3]*7000;
+    $("#drink3").val("Rp "+harga_minum3);
+  }
+  function drink_min3(){
+    minuman[3]--;
+    $("#minum3").val(minuman[3]);
+    harga_minum3=minuman[3]*7000;
+    $("#drink3").val("Rp "+harga_minum3);
+  }
+  function pesan_drink3(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman3").set({
+      harga: harga_minum3,
+      jumlah:  minuman[3],
+      nama: "Kopi Gula Merah",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max4(){
+    minuman[4]++;
+    $("#minum4").val(minuman[4]);
+    harga_minum4=minuman[4]*8000;
+    $("#drink4").val("Rp "+harga_minum4);
+  }
+  function drink_min4(){
+    minuman[4]--;
+    $("#minum4").val(minuman[4]);
+    harga_minum4=minuman[4]*8000;
+    $("#drink4").val("Rp "+harga_minum4);
+  }
+  function pesan_drink4(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman4").set({
+      harga: harga_minum4,
+      jumlah:  minuman[4],
+      nama: "Kopi Jahe Gula Merah",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max5(){
+    minuman[5]++;
+    $("#minum5").val(minuman[5]);
+    harga_minum5=minuman[5]*4000;
+    $("#drink5").val("Rp "+harga_minum5);
+  }
+  function drink_min5(){
+    minuman[5]--;
+    $("#minum5").val(minuman[5]);
+    harga_minum5=minuman[5]*4000;
+    $("#drink5").val("Rp "+harga_minum5);
+  }
+  function pesan_drink5(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman5").set({
+      harga: harga_minum5,
+      jumlah:  minuman[5],
+      nama: "Teh Manis Panas",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max6(){
+    minuman[6]++;
+    $("#minum6").val(minuman[6]);
+    harga_minum6=minuman[6]*5000;
+    $("#drink6").val("Rp "+harga_minum6);
+  }
+  function drink_min6(){
+    minuman[6]--;
+    $("#minum6").val(minuman[6]);
+    harga_minum6=minuman[6]*5000;
+    $("#drink6").val("Rp "+harga_minum6);
+  }
+  function pesan_drink6(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman6").set({
+      harga: harga_minum6,
+      jumlah:  minuman[6],
+      nama: "Teh Manis Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max7(){
+    minuman[7]++;
+    $("#minum7").val(minuman[7]);
+    harga_minum7=minuman[7]*6000;
+    $("#drink7").val("Rp "+harga_minum7);
+  }
+  function drink_min7(){
+    minuman[7]--;
+    $("#minum7").val(minuman[7]);
+    harga_minum7=minuman[7]*6000;
+    $("#drink7").val("Rp "+harga_minum7);
+  }
+  function pesan_drink7(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman7").set({
+      harga: harga_minum7,
+      jumlah:  minuman[7],
+      nama: "Teh Susu Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max8(){
+    minuman[8]++;
+    $("#minum8").val(minuman[8]);
+    harga_minum8=minuman[8]*6000;
+    $("#drink8").val("Rp "+harga_minum8);
+  }
+  function drink_min8(){
+    minuman[8]--;
+    $("#minum8").val(minuman[8]);
+    harga_minum8=minuman[8]*6000;
+    $("#drink8").val("Rp "+harga_minum8);
+  }
+  function pesan_drink8(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman8").set({
+      harga: harga_minum8,
+      jumlah:  minuman[8],
+      nama: "Wedang Jahe",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max9(){
+    minuman[9]++;
+    $("#minum9").val(minuman[9]);
+    harga_minum9=minuman[9]*6000;
+    $("#drink9").val("Rp "+harga_minum9);
+  }
+  function drink_min9(){
+    minuman[9]--;
+    $("#minum9").val(minuman[9]);
+    harga_minum9=minuman[9]*6000;
+    $("#drink9").val("Rp "+harga_minum9);
+  }
+  function pesan_drink9(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman9").set({
+      harga: harga_minum9,
+      jumlah:  minuman[9],
+      nama: "Teh Jahe",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max10(){
+    minuman[10]++;
+    $("#minum10").val(minuman[10]);
+    harga_minum10=minuman[10]*7000;
+    $("#drink10").val("Rp "+harga_minum10);
+  }
+  function drink_min10(){
+    minuman[10]--;
+    $("#minum10").val(minuman[10]);
+    harga_minum10=minuman[10]*7000;
+    $("#drink10").val("Rp "+harga_minum10);
+  }
+  function pesan_drink10(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman10").set({
+      harga: harga_minum10,
+      jumlah:  minuman[10],
+      nama: "Teh Tarik Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max11(){
+    minuman[11]++;
+    $("#minum11").val(minuman[11]);
+    harga_minum11=minuman[11]*8000;
+    $("#drink11").val("Rp "+harga_minum11);
+  }
+  function drink_min11(){
+    minuman[11]--;
+    $("#minum11").val(minuman[11]);
+    harga_minum11=minuman[11]*8000;
+    $("#drink11").val("Rp "+harga_minum11);
+  }
+  function pesan_drink11(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman11").set({
+      harga: harga_minum11,
+      jumlah:  minuman[11],
+      nama: "Teh Tarik Susu Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max12(){
+    minuman[12]++;
+    $("#minum12").val(minuman[12]);
+    harga_minum12=minuman[12]*6000;
+    $("#drink12").val("Rp "+harga_minum12);
+  }
+  function drink_min12(){
+    minuman[12]--;
+    $("#minum12").val(minuman[12]);
+    harga_minum12=minuman[12]*6000;
+    $("#drink12").val("Rp "+harga_minum12);
+  }
+  function pesan_drink12(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman12").set({
+      harga: harga_minum12,
+      jumlah:  minuman[12],
+      nama: "Capucino Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max13(){
+    minuman[13]++;
+    $("#minum13").val(minuman[13]);
+    harga_minum13=minuman[13]*7000;
+    $("#drink13").val("Rp "+harga_minum13);
+  }
+  function drink_min13(){
+    minuman[13]--;
+    $("#minum13").val(minuman[13]);
+    harga_minum13=minuman[13]*7000;
+    $("#drink13").val("Rp "+harga_minum13);
+  }
+  function pesan_drink13(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman13").set({
+      harga: harga_minum13,
+      jumlah:  minuman[13],
+      nama: "Capucino Susu Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max14(){
+    minuman[14]++;
+    $("#minum14").val(minuman[14]);
+    harga_minum14=minuman[14]*6000;
+    $("#drink14").val("Rp "+harga_minum14);
+  }
+  function drink_min14(){
+    minuman[14]--;
+    $("#minum14").val(minuman[14]);
+    harga_minum14=minuman[14]*6000;
+    $("#drink14").val("Rp "+harga_minum14);
+  }
+  function pesan_drink14(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman14").set({
+      harga: harga_minum14,
+      jumlah:  minuman[14],
+      nama: "Milo Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max15(){
+    minuman[15]++;
+    $("#minum15").val(minuman[15]);
+    harga_minum15=minuman[15]*7000;
+    $("#drink15").val("Rp "+harga_minum15);
+  }
+  function drink_min15(){
+    minuman[15]--;
+    $("#minum15").val(minuman[15]);
+    harga_minum15=minuman[15]*7000;
+    $("#drink15").val("Rp "+harga_minum15);
+  }
+  function pesan_drink15(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman15").set({
+      harga: harga_minum15,
+      jumlah:  minuman[15],
+      nama: "Milo Susu Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max16(){
+    minuman[16]++;
+    $("#minum16").val(minuman[16]);
+    harga_minum16=minuman[16]*6000;
+    $("#drink16").val("Rp "+harga_minum16);
+  }
+  function drink_min16(){
+    minuman[16]--;
+    $("#minum16").val(minuman[16]);
+    harga_minum16=minuman[16]*6000;
+    $("#drink16").val("Rp "+harga_minum16);
+  }
+  function pesan_drink16(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman16").set({
+      harga: harga_minum16,
+      jumlah:  minuman[16],
+      nama: "White Copi Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max17(){
+    minuman[17]++;
+    $("#minum17").val(minuman[17]);
+    harga_minum17=minuman[17]*7000;
+    $("#drink17").val("Rp "+harga_minum17);
+  }
+  function drink_min17(){
+    minuman[17]--;
+    $("#minum17").val(minuman[17]);
+    harga_minum17=minuman[17]*7000;
+    $("#drink17").val("Rp "+harga_minum17);
+  }
+  function pesan_drink17(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman17").set({
+      harga: harga_minum17,
+      jumlah:  minuman[17],
+      nama: "White Copi Susu Panas/Dingin",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max18(){
+    minuman[18]++;
+    $("#minum18").val(minuman[18]);
+    harga_minum18=minuman[18]*8000;
+    $("#drink18").val("Rp "+harga_minum18);
+  }
+  function drink_min18(){
+    minuman[18]--;
+    $("#minum18").val(minuman[18]);
+    harga_minum18=minuman[18]*8000;
+    $("#drink18").val("Rp "+harga_minum18);
+  }
+  function pesan_drink18(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman18").set({
+      harga: harga_minum18,
+      jumlah:  minuman[18],
+      nama: "Cincau",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max19(){
+    minuman[19]++;
+    $("#minum19").val(minuman[19]);
+    harga_minum19=minuman[19]*5000;
+    $("#drink19").val("Rp "+harga_minum19);
+  }
+  function drink_min19(){
+    minuman[19]--;
+    $("#minum19").val(minuman[19]);
+    harga_minum19=minuman[19]*5000;
+    $("#drink19").val("Rp "+harga_minum19);
+  }
+  function pesan_drink19(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman19").set({
+      harga: harga_minum19,
+      jumlah:  minuman[19],
+      nama: "Sirup Dinign",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max20(){
+    minuman[20]++;
+    $("#minum20").val(minuman[20]);
+    harga_minum20=minuman[20]*6000;
+    $("#drink20").val("Rp "+harga_minum20);
+  }
+  function drink_min20(){
+    minuman[20]--;
+    $("#minum20").val(minuman[20]);
+    harga_minum20=minuman[20]*6000;
+    $("#drink20").val("Rp "+harga_minum20);
+  }
+  function pesan_drink20(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman20").set({
+      harga: harga_minum20,
+      jumlah:  minuman[20],
+      nama: "Nutri Sari",
+    });
+    alert("Pesanan dibuat")
+  }
+
+  function drink_max21(){
+    minuman[21]++;
+    $("#minum21").val(minuman[21]);
+    harga_minum21=minuman[21]*2000;
+    $("#drink21").val("Rp "+harga_minum21);
+  }
+  function drink_min21(){
+    minuman[21]--;
+    $("#minum21").val(minuman[21]);
+    harga_minum21=minuman[21]*2000;
+    $("#drink21").val("Rp "+harga_minum21);
+  }
+  function pesan_drink21(){
+    var messagesRef = firebase.database();
+    firebase.database().ref("Meja2").child("Minuman21").set({
+      harga: harga_minum21,
+      jumlah:  minuman[21],
+      nama: "Es Kosong",
+    });
+    alert("Pesanan dibuat")
+  }
+
+
+
+
+
+</script>
+  </body>
+</html>

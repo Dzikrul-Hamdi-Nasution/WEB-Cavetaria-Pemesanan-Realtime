@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <div style="width: 250px" id="reader"></div>
+    <title>Scan Qr Code</title>
+  </head>
+  <body>
+
+    
+ 
+    <script src="html5-qrcode.min.js"></script>
+    
+
+
+  
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+<script>
+ var config = {
+    apiKey: "AIzaSyDOsOmc7-QzmPk1ivu43MU5-qYzTNiV5zM",
+    authDomain: "irsyad-cafe.firebaseapp.com",
+    databaseURL: "https://irsyad-cafe-default-rtdb.firebaseio.com/",
+    projectId: "irsyad-cafe",
+    storageBucket: "irsyad-cafe.appspot.com",
+    messagingSenderId: "578246487910",
+    appId: "1:578246487910:web:f19ea1e90767e1d1fae2a7",
+    measurementId: "G-ZRMBTQ0L8L"
+};
+firebase.initializeApp(config);
+
+var hasil_baca;
+function onScanSuccess(qrCodeMessage) {
+	// handle on success condition with the decoded message
+    hasil_baca=qrCodeMessage;
+    if (hasil_baca=="Meja1"){
+        window.location = 'http://irsyad-cafe.web.app/menu.html';
+       
+    }
+
+    if (hasil_baca=="Meja2"){
+        window.location = 'http://irsyad-cafe.web.app/menu2.html';
+    }
+
+    if (hasil_baca=="Meja3"){
+        window.location = 'http://irsyad-cafe.web.app/menu3.html';
+    }
+
+    if (hasil_baca=="Meja4"){
+        window.location = 'http://irsyad-cafe.web.app/menu4.html';
+    }
+}
+
+
+
+var html5QrcodeScanner = new Html5QrcodeScanner(
+	"reader", { fps: 10, qrbox: 250 });
+html5QrcodeScanner.render(onScanSuccess);
+
+
+
+</script>
+  </body>
+</html>

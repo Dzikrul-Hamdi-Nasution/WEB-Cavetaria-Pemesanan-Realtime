@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Icon -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+  
+    <title>Pesanan</title>
+  </head>
+  <body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar navbar-light" style="background-color: #e3f2fd;">
+     <div class="container">   
+    <a class="navbar-brand" href="#">Irsyad Cafetaria</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="menu2.html"><i class="fas fa-utensils mr-2"></i>DAFTAR MENU <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link js-scroll-trigger" href="pesanan2.html"><i class="fas fa-shopping-cart mr-2"></i>DAFTAR PESANAN<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  	<div class="row">
+  		<div class="col-12 col-md-12 mt-5">
+  			<h3><i class="fas fa-shopping-cart mr-2"></i>DAFTAR PESANAN</h3>
+  			<hr class="hr-menu">
+  			<table id="tabel-status-alat" class="table table-bordered">
+			  <thead>
+			    <tr>
+			      <th scope="col">Nama Menu</th>
+			      <th scope="col">Jumlah Pesan</th>
+			      <th scope="col">Harga</th>
+			    </tr>
+			  </thead>
+			 
+			    <tr>
+			    	
+			    </tr>
+			  </tbody>
+        <th scope="row">Total Harga</th>
+			    	<td></td> 
+            <td> <input  type="text" id="bayar"  readonly></input></td> 
+			</table>
+      
+		   </div>
+		</div>
+	</div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+    <script>
+      var config = {
+      apiKey: "AIzaSyDOsOmc7-QzmPk1ivu43MU5-qYzTNiV5zM",
+              authDomain: "irsyad-cafe.firebaseapp.com",
+              databaseURL: "https://irsyad-cafe-default-rtdb.firebaseio.com/",
+              projectId: "irsyad-cafe",
+              storageBucket: "irsyad-cafe.appspot.com",
+              messagingSenderId: "578246487910",
+              appId: "1:578246487910:web:f19ea1e90767e1d1fae2a7",
+              measurementId: "G-ZRMBTQ0L8L"
+    };
+    firebase.initializeApp(config);
+
+    var messagesRef = firebase.database();
+            var ref=messagesRef.ref("Meja_2_Info").child("Pesan");
+            ref.on("value",function(snapshot){
+                snapshot.forEach(function (childSnapshot){
+                    data=childSnapshot.val();
+                    console.log(data);
+                    nilai_meja_2=data;
+                    alert(nilai_meja_2);
+                    $("#bayar").val("Rp "+total_harga);
+              
+                });     
+            })    
+
+    var dbRef = firebase.database();
+var statusAlat = dbRef.ref("Meja2");
+var total_harga=0;
+// Dapatkan referensi table
+var table = document.getElementById("tabel-status-alat").getElementsByTagName('tbody')[0];;
+ 
+// Memuat Data
+statusAlat.on("child_added", function(data, prevChildKey) {
+var newstatusAlat = data.val();
+ 
+var row = table.insertRow(table.rows.length);
+ 
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+
+
+ 
+cell1.innerHTML = newstatusAlat.nama;
+cell3.innerHTML = newstatusAlat.harga;
+cell2.innerHTML = newstatusAlat.jumlah;
+total_harga=total_harga+parseInt(cell3.innerHTML);
+
+});
+
+
+</script>
+  </body>
+</html>
