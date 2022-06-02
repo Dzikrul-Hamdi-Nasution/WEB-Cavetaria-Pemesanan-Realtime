@@ -1,0 +1,431 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Dashboard</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+     <!-- MORRIS CHART STYLES-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <input id="nama" class="navbar-brand" href="index.php" readonly> <!-- <?php echo $_SESSION['admin']['username'] ?> --></input> 
+              
+            </div>
+  
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+				
+					
+                   
+                    
+                    <li>
+                        <a onclick="keluar()"  href="#"><i class="fa fa-sign-out fa-3x"></i> Logout</a>
+                    </li>
+                </ul>
+               
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <h2>Pembelian</h2>
+
+                     <table class="table table-bordered">
+                        
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Reset</th>
+                                <th>Nomor Meja</th>
+                                <th>Pengambilan Layanan</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <form>
+                                <td>
+                                    <button onclick="reset1()"  class="btn btn-secondary" type="reset">Reset</button>
+                                </td>
+                                <td>Meja Nomor <button onclick="meja1()" type="button"  class="btn-sm btn-danger" type="none">01</button>
+                                    <input  type="text" id="nama_meja_1" class="btn btn-warning" readonly></input></td>
+                                
+                                <td>
+                                   <button id="tombol_ambil_1" type="button" onclick="ambil1()"  class="btn btn-primary" >Ambil</button> 
+                                </td>
+                                <td>
+                                  
+                                    <select name="pesan" id="meja1_pesan">
+                                        <option>-- PILIH STATUS --</option>
+                                        <option value="Pesanan Sedang Dibuat" > Pesanan Sedang Dibuat</option>
+                                        <option value="Selamat Menikmati">Selamat Menikmati</option>
+                                    </select>
+                                    <button id="kirim" onclick="kirim1()" type="button"  class="btn btn-primary">Kirim</button> 
+                                   
+                                </td>
+                                </form>
+                            </tr>
+
+                             <tr>
+                                <td>2</td>
+                                <form>
+                                <td>
+                                    <button onclick="reset2()"  class="btn btn-secondary" type="reset">Reset</button>
+                                </td>
+                                <td>Meja Nomor <button onclick="meja2()" type="button"  class="btn-sm btn-danger" type="none">02</button>
+                                    <input  type="text" id="nama_meja_2" class="btn btn-warning" readonly></input></td></td>
+                                <td>
+                                   <button id="tombol_ambil_2" onclick="ambil2()"  class="btn btn-primary">Ambil</button> 
+                                </td>
+                                <td>
+                                   
+                                    <select name="pesan" id="meja2_pesan">
+                                        <option>-- PILIH STATUS --</option>
+                                        <option value="Pesanan Sedang Dibuat" > Pesanan Sedang Dibuat</option>
+                                        <option value="Selamat Menikmati">Selamat Menikmati</option>
+                                    </select>
+                                    <button id="kirim" onclick="kirim2()" type="button"  class="btn btn-primary">Kirim</button> 
+                                    
+                                </td>
+                                </form>
+                            </tr>
+
+                             <tr>
+                                <td>3</td>
+                                <form>
+                                <td>
+                                    <button onclick="reset3()"  class="btn btn-secondary" type="reset">Reset</button>
+                                </td>
+                                <td>Meja Nomor <button onclick="meja3()" type="button" class="btn-sm btn-danger" type="none">03</button>
+                                    <input  type="text" id="nama_meja_3" class="btn btn-warning" readonly></input></td>
+                                <td>
+                                   <button id="tombol_ambil_3" onclick="ambil3()"  class="btn btn-primary">Ambil</button> 
+                                </td>
+                                <td>
+                                   
+                                    <select name="pesan" id="meja3_pesan">
+                                        <option>-- PILIH STATUS --</option>
+                                        <option value="Pesanan Sedang Dibuat" > Pesanan Sedang Dibuat</option>
+                                        <option value="Selamat Menikmati">Selamat Menikmati</option>
+                                    </select>
+                                    <button id="kirim" onclick="kirim3()" type="button"  class="btn btn-primary">Kirim</button> 
+                                    
+                                </td>
+                                </form>
+                            </tr>
+
+                             <tr>
+                                <td>4</td>
+                                <form>
+                                <td>
+                                    <button onclick="reset4()"  class="btn btn-secondary" type="reset">Reset</button>
+                                </td>
+                                <td>Meja Nomor <button onclick="meja4()" type="button" class="btn-sm btn-danger" type="none">04</button>
+                                    <input  type="text" id="nama_meja_4" class="btn btn-warning" readonly></input></td>
+                                <td>
+                                   <button id="tombol_ambil_4" onclick="ambil4()"  class="btn btn-primary">Ambil</button> 
+                                </td>
+                                <td>
+                                  
+                                        <select name="pesan" id="meja4_pesan">
+                                            <option>-- PILIH STATUS --</option>
+                                            <option value="Pesanan Sedang Dibuat" > Pesanan Sedang Dibuat</option>
+                                            <option value="Selamat Menikmati">Selamat Menikmati</option>
+                                        </select>
+                                        <button id="kirim" onclick="kirim4()" type="button"  class="btn btn-primary">Kirim</button> 
+                                   
+                                </td>
+                                </form>
+                            </tr>
+                        </tbody>
+                        </form>
+                     </table>
+                        </div>
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+     <!-- MORRIS CHART SCRIPTS -->
+     <script src="assets/js/morris/raphael-2.1.0.min.js"></script>
+    <script src="assets/js/morris/morris.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+
+    <script>
+    var pecah;
+    var config = {
+      apiKey: "AIzaSyDOsOmc7-QzmPk1ivu43MU5-qYzTNiV5zM",
+              authDomain: "irsyad-cafe.firebaseapp.com",
+              databaseURL: "https://irsyad-cafe-default-rtdb.firebaseio.com/",
+              projectId: "irsyad-cafe",
+              storageBucket: "irsyad-cafe.appspot.com",
+              messagingSenderId: "578246487910",
+              appId: "1:578246487910:web:f19ea1e90767e1d1fae2a7",
+              measurementId: "G-ZRMBTQ0L8L"
+    };
+    firebase.initializeApp(config);
+
+
+    firebase.auth().onAuthStateChanged(function(user) {
+        var user = firebase.auth().currentUser;
+                
+
+                if (user) {
+                    // User is signed in.
+                    var email_id = user.email;             
+                var res = email_id.split("@");
+                 pecah = res[0];  
+                $("#nama").val(pecah);
+                    alert("Selamat Datang " + pecah)
+                    scan_data();
+                } else {
+                    // No user is signed in.
+                    alert("Silahkan Login Kembali")
+                    window.location.replace('index.html')
+                }
+        });
+
+
+        function meja1(){
+            window.location.replace('pesanan.html')
+        }
+        function meja2(){
+            window.location.replace('pesanan2.html')
+        }
+        function meja3(){
+            window.location.replace('pesanan3.html')
+        }
+        function meja4(){
+            window.location.replace('pesanan4.html')
+        }
+        
+        function kirim4(){
+            firebase.database().ref("Meja_4_Info").child("Pesan").set({
+                nilai: meja4_pesan.value,
+            });
+            alert("Pesan telah dikirim")
+        }
+        function kirim3(){
+            firebase.database().ref("Meja_3_Info").child("Pesan").set({
+                nilai: meja3_pesan.value,
+            });
+            alert("Pesan telah dikirim")
+        }
+        function kirim2(){
+            firebase.database().ref("Meja_2_Info").child("Pesan").set({
+                nilai: meja2_pesan.value,
+            });
+            alert("Pesan telah dikirim")
+        }
+        function kirim1(){
+            firebase.database().ref("Meja_1_Info").child("Pesan").set({
+                nilai: meja1_pesan.value,
+            });
+            alert("Pesan telah dikirim")
+        }
+
+        function reset1(){
+            firebase.database().ref("Meja1").remove();
+            firebase.database().ref("Meja_1_Info").child("status").set({
+                nilai: "Kosong",
+            });
+            firebase.database().ref("Meja_1_Info").child("Pesan").set({
+                nilai: "Silahkan Pesan Makanan",
+            });
+            alert("Data Berhasil dihapus");
+            scan_data()
+        }
+        function reset2(){
+            firebase.database().ref("Meja2").remove();
+            firebase.database().ref("Meja_2_Info").child("status").set({
+                nilai: "Kosong",
+            });
+            firebase.database().ref("Meja_2_Info").child("Pesan").set({
+                nilai: "Silahkan Pesan Makanan",
+            });
+            scan_data()
+            alert("Data Berhasil dihapus");
+        }
+        function reset3(){
+            firebase.database().ref("Meja3").remove();
+            firebase.database().ref("Meja_3_Info").child("status").set({
+                nilai: "Kosong",
+            });
+            firebase.database().ref("Meja_3_Info").child("Pesan").set({
+                nilai: "Silahkan Pesan Makanan",
+            });
+            scan_data()
+            alert("Data Berhasil dihapus");
+        }
+        function reset4(){
+            firebase.database().ref("Meja4").remove();
+            firebase.database().ref("Meja_4_Info").child("status").set({
+                nilai: "Kosong",
+            });
+            firebase.database().ref("Meja_4_Info").child("Pesan").set({
+                nilai: "Silahkan Pesan Makanan",
+            });
+            scan_data()
+            alert("Data Berhasil dihapus");
+        }
+
+        function keluar(){
+            firebase.auth().signOut();
+            alert("Anda berhasil Logout")
+        }
+
+
+        function ambil1(){
+            alert("diambil");
+            firebase.database().ref("Meja_1_Info").child("status").set({
+                nilai: pecah,
+            });
+        }
+
+        function ambil2(){
+            alert("diambil");
+            firebase.database().ref("Meja_2_Info").child("status").set({
+                nilai: pecah,
+            });
+        }
+
+        function ambil3(){
+            alert("diambil");
+            firebase.database().ref("Meja_3_Info").child("status").set({
+                nilai: pecah,
+            });
+        }
+
+        function ambil4(){
+            alert("diambil");
+            firebase.database().ref("Meja_4_Info").child("status").set({
+                nilai: pecah,
+            });
+        }
+
+        var nilai_meja_1;
+        function scan_data(){
+
+            
+            var messagesRef = firebase.database();
+            var ref=messagesRef.ref("Meja_1_Info").child("status");
+            ref.on("value",function(snapshot){
+                snapshot.forEach(function (childSnapshot){
+                    data=childSnapshot.val();
+                    console.log(data);
+                    nilai_meja_1=data;
+                    $("#nama_meja_1").val(nilai_meja_1);
+
+                    if(nilai_meja_1=="Penuh"){
+                        var tombol = document.getElementById("tombol_ambil_1")
+                        tombol.disabled = false;
+                    }
+                    else{
+                        var tombol = document.getElementById("tombol_ambil_1")
+                        tombol.disabled = true;
+                    }
+                });     
+            })     		
+
+            var ref=messagesRef.ref("Meja_2_Info").child("status");
+            ref.on("value",function(snapshot){
+                snapshot.forEach(function (childSnapshot){
+                    data=childSnapshot.val();
+                    console.log(data);
+                    nilai_meja_2=data;
+                    $("#nama_meja_2").val(nilai_meja_2);
+
+                    if(nilai_meja_2=="Penuh"){
+                        var tombol = document.getElementById("tombol_ambil_2")
+                        tombol.disabled = false;
+                    }
+                    else{
+                        var tombol = document.getElementById("tombol_ambil_2")
+                        tombol.disabled = true;
+                    }
+                });     
+            })     		
+
+            var ref=messagesRef.ref("Meja_3_Info").child("status");
+            ref.on("value",function(snapshot){
+                snapshot.forEach(function (childSnapshot){
+                    data=childSnapshot.val();
+                    console.log(data);
+                    nilai_meja_3=data;
+                    $("#nama_meja_3").val(nilai_meja_3);
+
+                    if(nilai_meja_3=="Penuh"){
+                        var tombol = document.getElementById("tombol_ambil_3")
+                        tombol.disabled = false;
+                    }
+                    else{
+                        var tombol = document.getElementById("tombol_ambil_3")
+                        tombol.disabled = true;
+                    }
+                });     
+            })     	
+            
+            var ref=messagesRef.ref("Meja_4_Info").child("status");
+            ref.on("value",function(snapshot){
+                snapshot.forEach(function (childSnapshot){
+                    data=childSnapshot.val();
+                    console.log(data);
+                    nilai_meja_4=data;
+                    $("#nama_meja_4").val(nilai_meja_4);
+
+                    if(nilai_meja_4=="Penuh"){
+                        var tombol = document.getElementById("tombol_ambil_4")
+                        tombol.disabled = false;
+                    }
+                    else{
+                        var tombol = document.getElementById("tombol_ambil_4")
+                        tombol.disabled = true;
+                    }
+                });     
+            })     		
+        
+        }
+
+
+
+
+    </script>
+    
+   
+</body>
+</html>
